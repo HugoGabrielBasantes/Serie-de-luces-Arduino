@@ -1,4 +1,11 @@
 
+/*UNIVERSIDAD TECNICA DEL NORTE
+  *FICA CIERCOM 
+  *Nombre:Basantes Hugo
+  *Fecha:17-11-2016
+  *Contador desde el 0 hasta el 999
+*/
+///////////////////////////// Inicialización de las variables 
 int A=13;
 int B=12;
 int C=11;
@@ -10,6 +17,7 @@ int valor_centena;
 int valor_decena;
 int valor_unidad;
 int contador=0;
+///////////////////////////////
 void setup() {
   // put your setup code here, to run once:
 
@@ -26,24 +34,25 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
  for(;contador<999;contador++){
-      valor_centena=contador/100;
-      valor_decena= (contador-(valor_centena*100))/10;
-      valor_unidad=contador-((valor_centena*100)+(valor_decena*10));
+      valor_centena=contador/100;          // Obtenemos el valor de la centena 
+      valor_decena= (contador-(valor_centena*100))/10; // obtenemos el valor de la decena 
+      valor_unidad=contador-((valor_centena*100)+(valor_decena*10));  // obtenemos el valor de la unidad
       digitalWrite(unidades,HIGH);
       digitalWrite(decenas,LOW);
       digitalWrite(centenas,LOW);
-      //imprimir dato
+      //imprimir dato unidad
       contador_display(valor_unidad);
       delay(150);
       digitalWrite(unidades,LOW);
       digitalWrite(decenas,HIGH);
       digitalWrite(centenas,LOW);
-      //imprimir dato
+      //imprimir dato decena
       contador_display(valor_decena);
       delay (50); 
       digitalWrite(unidades,LOW);
       digitalWrite(decenas,LOW);
       digitalWrite(centenas,HIGH);
+   // imorimir dato centena
       contador_display(valor_centena);
       delay(50);
    }
