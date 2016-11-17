@@ -1,3 +1,12 @@
+
+/*UNIVERSIDAD TECNICA DEL NORTE
+  *FICA CIERCOM 
+  *Nombre:Basantes Hugo
+  *Fecha:17-11-2016
+  *Contador desde el 0 hasta el 999
+*/
+///////////////////////////// Inicialización de las variables 
+
 int A=13;
 int B=12;
 int C=11;
@@ -9,7 +18,7 @@ int valor_unidad;
 int contador=0;
 int motor=9;
 double valor_cad=0;
-
+///////////////
 void setup() {
   // put your setup code here, to run once:
  
