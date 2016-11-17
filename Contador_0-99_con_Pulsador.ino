@@ -1,3 +1,11 @@
+
+/*UNIVERSIDAD TECNICA DEL NORTE
+  *FICA /CIERCOM 
+  *Nombre:Basantes Hugo
+  *Fecha:17-11-2016
+  *Contador desde el 0 hasta el 999
+*/
+///////////////////////////// Inicialización de las variables 
 int A=13;
 int B=12;
 int C=11;
@@ -14,6 +22,7 @@ int tiempoAntirebote=12;        // para que lea correctamente el estado del boto
 int cuenta=0;                   // cuenta las veces presionamos el boton
 int estadoBoton;
 int estadoBotonAnterior;
+/////////////////////////////////////////////////  funcion antirebote 
 
 boolean antirebote(int pin) {   // boolean es todo valor que puede tener dos posibles valores 
  
@@ -38,7 +47,7 @@ boolean antirebote(int pin) {   // boolean es todo valor que puede tener dos pos
    return estado;      // retorna el estado si el boton esta siendo presionado
 
   }
-
+////////////////////////////////
   
 void setup() {
   // put your setup code here, to run once:
